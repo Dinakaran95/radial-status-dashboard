@@ -1,29 +1,33 @@
 {
-  "lastUpdated": "2026-01-13 20:30 IST",
+  "lastUpdated": "2026-01-13 21:30 IST",
   "services": [
     {
       "name": "WMS - Manhattan 13",
       "status": "green",
-      "message": "Operational"
+      "message": "All warehouse operations normal"
+    },
+    {
+      "name": "WMS - Manhattan 14",
+      "status": "amber",
+      "message": "Intermittent pick delays"
     },
     {
       "name": "OMS - Radial",
       "status": "green",
-      "message": "Operational"
+      "message": "Order processing operational"
     },
     {
       "name": "Payments - Adyen",
-      "status": "amber",
-      "message": "Intermittent payment delays"
+      "status": "red",
+      "message": "Payment authorization failures"
     }
   ],
   "incidents": [
     {
-      "title": "Adyen Payment Delay",
-      "impact": "Some customers may see delays",
-      "status": "Monitoring",
-      "updated": "20:25 IST"
+      "title": "Adyen Payment Outage",
+      "impact": "Checkout impacted for some regions",
+      "status": "Investigating",
+      "updated": "21:25 IST"
     }
   ]
 }
-
