@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Radial Production Status</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Radial System Status</h1>
+<p id="updated"></p>
+
+<div id="services"></div>
+
+<h2>Active Incidents</h2>
+<div id="incidents"></div>
+
+<script>
+fetch("status.json")
+.then(res => res.json())
+.then(data => {
+  document.getElementById("updated").innerText =
+    "Last updated: " + data.lastUpdated;
+
+  data.services.forEach(s => {
+    let div = document.createElement("div");
+    div.className = "service " + s.status;
+    div.innerHTML = `<strong>${s.name}</strong><br>${s.message}`;
+    document.getElementById("services").appendChild(div);
+  });
+
+  data.incidents.forEach(i => {
+    let inc = document.createElement("div");
+    inc.className = "incident";
+    inc.innerHTML = `<b>${i.title}</b><br>${i.impact}<br>Status: ${i.status}`;
+    document.getElementById("incidents").appendChild(inc);
+  });
+});
+</script>
+
+</body>
+</html>
 
