@@ -1,1 +1,29 @@
+{
+  "lastUpdated": "2026-01-13 20:30 IST",
+  "services": [
+    {
+      "name": "WMS - Manhattan 13",
+      "status": "green",
+      "message": "Operational"
+    },
+    {
+      "name": "OMS - Radial",
+      "status": "green",
+      "message": "Operational"
+    },
+    {
+      "name": "Payments - Adyen",
+      "status": "amber",
+      "message": "Intermittent payment delays"
+    }
+  ],
+  "incidents": [
+    {
+      "title": "Adyen Payment Delay",
+      "impact": "Some customers may see delays",
+      "status": "Monitoring",
+      "updated": "20:25 IST"
+    }
+  ]
+}
 
