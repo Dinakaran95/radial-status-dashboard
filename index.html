@@ -1,42 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Radial Production Status</title>
+  <title>Radial – WMS 13 Status Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Radial System Status</h1>
+<h1>Radial – WMS Manhattan 13 Status</h1>
 <p id="updated"></p>
 
-<div id="services"></div>
-
-<h2>Active Incidents</h2>
-<div id="incidents"></div>
+<div id="wms13"></div>
 
 <script>
 fetch("status.json")
 .then(res => res.json())
 .then(data => {
+
   document.getElementById("updated").innerText =
     "Last updated: " + data.lastUpdated;
 
-  data.services.forEach(s => {
+  data.wms13.forEach(site => {
     let div = document.createElement("div");
-    div.className = "service " + s.status;
-    div.innerHTML = `<strong>${s.name}</strong><br>${s.message}`;
-    document.getElementById("services").appendChild(div);
+    div.className = "site " + site.status;
+    div.innerHTML = `
+      <strong>${site.facility}</strong>
+      <a href="${site.url}" target="_blank">Open</a>
+    `;
+    document.getElementById("wms13").appendChild(div);
   });
 
-  data.incidents.forEach(i => {
-    let inc = document.createElement("div");
-    inc.className = "incident";
-    inc.innerHTML = `<b>${i.title}</b><br>${i.impact}<br>Status: ${i.status}`;
-    document.getElementById("incidents").appendChild(inc);
-  });
 });
 </script>
 
 </body>
 </html>
-
