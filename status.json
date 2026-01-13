@@ -1,33 +1,101 @@
 {
-  "lastUpdated": "2026-01-13 21:30 IST",
-  "services": [
+  "lastUpdated": "2026-01-14 10:30 IST",
+
+  "wms13": [
     {
-      "name": "WMS - Manhattan 13",
+      "facility": "Allentown",
       "status": "green",
-      "message": "All warehouse operations normal"
+      "url": "http://wmo-altw.gspt.net:20200/manh/index.html"
     },
     {
-      "name": "WMS - Manhattan 14",
-      "status": "amber",
-      "message": "Intermittent pick delays"
-    },
-    {
-      "name": "OMS - Radial",
+      "facility": "Buford",
       "status": "green",
-      "message": "Order processing operational"
+      "url": "http://wmo-cedr.gspt.net:20200/manh/index.html"
     },
     {
-      "name": "Payments - Adyen",
+      "facility": "Burlington",
       "status": "red",
-      "message": "Payment authorization failures"
-    }
-  ],
-  "incidents": [
+      "url": "https://wmo-burl.gspt.net:20101/manh/index.html"
+    },
     {
-      "title": "Adyen Payment Outage",
-      "impact": "Checkout impacted for some regions",
-      "status": "Investigating",
-      "updated": "21:25 IST"
+      "facility": "Easton",
+      "status": "amber",
+      "url": "http://wmo-ESTN.gspt.net:20200/manh/index.html"
+    },
+    {
+      "facility": "Groveport",
+      "status": "green",
+      "url": "http://wmo-grov.gspt.net:20200/manh/index.html"
+    },
+    {
+      "facility": "Indianapolis",
+      "status": "green",
+      "url": "http://wmo-INDI.gspt.net:20200/manh/index.html"
+    },
+    {
+      "facility": "Martinsville A",
+      "status": "green",
+      "url": "https://wmo-mtva.gspt.net:20101/manh/index.html"
+    },
+    {
+      "facility": "Martinsville B",
+      "status": "green",
+      "url": "https://wmo-mtvb.gspt.net:20101/manh/index.html"
+    },
+    {
+      "facility": "Mississauga",
+      "status": "green",
+      "url": "http://wmo-miss.gspt.net:20200/manh/index.html"
+    },
+    {
+      "facility": "Richwood 1",
+      "status": "green",
+      "url": "http://wmo-rw1.gspt.net:20200/"
+    },
+    {
+      "facility": "Richwood 2",
+      "status": "green",
+      "url": "http://wmo-rw3.gspt.net:20200/manh/index.html"
+    },
+    {
+      "facility": "Rialto 2",
+      "status": "green",
+      "url": "http://wmo-RIAL.gspt.net:20200/manh/index.html"
+    },
+    {
+      "facility": "Rialto 3",
+      "status": "green",
+      "url": "http://wmo-RIA3.gspt.net:20200/manh/index.html"
+    },
+    {
+      "facility": "Romeoville",
+      "status": "green",
+      "url": "http://wmo-rome.gspt.net:20200/"
+    },
+    {
+      "facility": "Shepardsville",
+      "status": "green",
+      "url": "http://wmo-shep.gspt.net:20200/manh/index.html"
+    },
+    {
+      "facility": "Indy3",
+      "status": "green",
+      "url": "https://wmo-ind3.gspt.net:20101/"
+    },
+    {
+      "facility": "Indy2",
+      "status": "green",
+      "url": "https://wmo-ind2.gspt.net:20101/manh/index.html"
+    },
+    {
+      "facility": "Tradeport 1",
+      "status": "green",
+      "url": "http://wmo-tdp1.gspt.net:20200/manh/index.html"
+    },
+    {
+      "facility": "Tradeport 2",
+      "status": "green",
+      "url": "http://wmo-tdp2.gspt.net:20200/"
     }
   ]
 }
